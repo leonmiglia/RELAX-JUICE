@@ -7,15 +7,36 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-amber-400" style="font-family: 'Noto Sans KR', sans-serif;" >
     <header class="py-4 fixed w-full top-0 xl:py-8">
         <img class="ml-5 md:h-12 xl:ml-10" src="https://goldeneagle-ks.com/wp-content/uploads/2023/09/relax_logo.svg" alt="relax logo">
-        <svg class="w-9 text-green-900 absolute top-4 right-5 cursor-pointer md:w-12 xl:top-8 xl:right-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <svg id="toggle" class="w-9 text-green-900 absolute top-4 right-5 cursor-pointer md:w-12 xl:top-8 xl:right-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
     </header>
+    <section id="menu" class="hidden bg-red-600 fixed top-0 w-full h-full p-10 opacity-[1]">
+        <nav class="mt-8">
+            <ul class="uppercase text-red-300 font-extrabold text-4xl">
+                <li class="mb-8">chi siamo</li>
+                <li class="mb-8">prodotti</li>
+                <li class="mb-9">luoghi</li>
+                <li>contattaci</li>
+            </ul>            
+        </nav>
+        <svg id="close" class="w-9 text-red-300 absolute top-4 right-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+        <div class="flex flex-wrap mt-36">
+            <p class="text-white mr-5 mb-5">Seguici sui nostri canali:</p>
+            <ul class="flex">
+                <li class="w-8 mr-3"><a target="_blank" href="https://www.facebook.com/RelaxJuices"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" alt=""></a></li>
+                <li class="w-8 mr-3"><a target="_blank" href="https://www.instagram.com/relax__juice/"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" alt=""></a></li>
+                <li class="w-8"><a target="_blank" href="https://www.youtube.com/@frutexL.L.C"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png" alt=""></a></li>
+            </ul>
+        </div>
+    </section>
     <section  class="w-full h-[580px] bg-cover bg-center rounded-b-[30%] sm:h-[700px] md:bg-no-repeat md:w-[700px] md:mx-auto md:mt-14 md:rounded-full xl:h-[770px] xl:w-[770px]" style="background-image: url('img/relax-banner.jpeg');"></section>
     <section class="p-12 pb-20 md:pt-16 md:pb-24 xl:px-36 xl:pt-24 xl:pb-32">
         <p class="text-center text-2xl font-extralight text-green-900 tracking-wider leading-9 md:text-3xl md:leading-[55px]">
@@ -59,5 +80,7 @@
             <li class="w-9 xl:w-14"><a target="_blank" href="https://www.youtube.com/@frutexL.L.C"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png" alt=""></a></li>
         </ul>
     </footer>
+
+    <script src="appearMenu.js"></script>
 </body>
 </html>
