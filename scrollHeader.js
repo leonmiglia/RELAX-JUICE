@@ -1,7 +1,7 @@
 const header = document.querySelector('header');
 
 window.addEventListener("scroll", function() {
-    const scrollHeight = this.window.scrollY;
+    const scrollHeight = window.scrollY;
 
     if(scrollHeight > 100) {
         header.classList.add('bg-red-600');
