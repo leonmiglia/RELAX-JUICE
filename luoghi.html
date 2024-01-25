@@ -9,21 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-800" style="font-family: 'Noto Sans KR', sans-serif;">
+<body class="bg-slate-800 min-h-screen" style="font-family: 'Noto Sans KR', sans-serif;">
     <div class="text-center py-5 xl:text-left">
         <a class="inline-block xl:ml-10 xl:mt-5" href="index.html">
             <img class="xl:h-12" src="https://goldeneagle-ks.com/wp-content/uploads/2023/10/white_relax.svg" alt="relax_logo">
         </a>
     </div>
 
-    <h1 class="text-slate-200 font-bold uppercase text-center text-3xl mt-10 md:text-5xl md:mt-16 md:mb-14">dove trovarci:</h1>
+    <h1 class="text-slate-200 font-bold uppercase text-center text-3xl mt-10 md:text-5xl md:mt-16">dove trovarci:</h1>
     
-    <section class="relative mt-10 mx-auto w-[320px] h-[220px] md:w-[550px] md:h-[450px]">
-        <svg id="previous" class="w-6 bg-slate-400 border-2 border-slate-200 rounded-lg cursor-pointer absolute top-24 -left-3 md:top-48 md:-left-5
+    <section class="relative mt-10 mx-auto max-[350px]:w-full w-[320px] h-[220px] md:w-[550px] md:h-[450px]">
+        <svg id="previous" class="w-6 bg-slate-400 border-2 border-slate-200 rounded-lg cursor-pointer absolute top-24 max-[350px]:left-2 -left-3 md:top-48 md:-left-5
         hover:scale-125 active:scale-75 md:w-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
         </svg>
-        <svg id="next" class="w-6 bg-slate-400 border-2 border-slate-200 rounded-lg cursor-pointer absolute top-24 left-[307px] md:top-48 md:left-[520px]
+        <svg id="next" class="w-6 bg-slate-400 border-2 border-slate-200 rounded-lg cursor-pointer absolute top-24 max-[350px]:left-[285px] left-[307px] md:top-48 md:left-[520px]
         hover:scale-125 active:scale-75 md:w-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
         </svg>
@@ -35,6 +35,14 @@
             <img class="w-full h-full hidden" src="https://opinione.it/media/3868302/frutteria.jpg?crop=0.020588235294117629,0,0,0&cropmode=percentage&width=370&height=272&rnd=131738030030000000" alt="bangla image">
         </div>
     </section>
+    <footer class="bg-slate-400 py-10 px-5 flex absolute bottom-0 w-full md:px-16 md:static md:mt-36 xl:px-20">
+        <img class="xl:h-16" src="https://goldeneagle-ks.com/wp-content/uploads/2023/10/white_relax.svg" alt="relax_logo">
+        <ul class="flex items-center ml-auto">
+            <li class="w-9 mr-4 xl:w-12 xl:mr-10"><a target="_blank" href="https://www.facebook.com/RelaxJuices"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png" alt=""></a></li>
+            <li class="w-9 mr-4 xl:w-12 xl:mr-10"><a target="_blank" href="https://www.instagram.com/relax__juice/"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-white-glyph.png" alt=""></a></li>
+            <li class="w-9 xl:w-14"><a target="_blank" href="https://www.youtube.com/@frutexL.L.C"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png" alt=""></a></li>
+        </ul>
+    </footer>
 
 <script src="carousel.js"></script>
 </body>
