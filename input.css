@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .product-name {
+        @apply text-slate-700 text-sm text-center border-t border-slate-400 pt-2;
+    }
+}
+@layer components {
+    .product-container {
+        @apply bg-slate-300 w-[180px] rounded-lg p-5 md:w-[250px];
+    } 
+}
